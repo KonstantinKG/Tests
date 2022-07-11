@@ -53,6 +53,8 @@
 <script>
    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
    let mql = window.matchMedia('(max-width: 1024px)');
+   alert(window.innerHeight)
+   alert(document.documentElement.clientHeight)
    mql.addEventListener('change', () => {
       console.log('Media changed');
       if (mql.matches) {
